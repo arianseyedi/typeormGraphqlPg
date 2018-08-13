@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "@types/koa-router": "^7.0.31",
+    "@types/uuid": "^3.4.3",
     "koa-graphql": "^0.7.5",
     "koa-mount": "^3.0.0"
   }

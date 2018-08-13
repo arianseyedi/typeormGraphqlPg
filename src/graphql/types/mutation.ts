@@ -4,10 +4,13 @@ export const Mutation = `
             id: String!
         ): Card
         
-        # add mutation definition here
         updateCard (
             id: String!
             patch: CardPatch!
+        ): Card
+
+        createCard (
+            card: NewCardPatch!
         ): Card
     }
 `;
