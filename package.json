@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "@types/node": "^10.5.8",
+    "apollo-server-koa": "^2.0.0-rc.12",
+    "graphql": "^0.13.2",
+    "koa": "^2.5.2",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "nodemon": "^1.18.3",
+    "pg": "^7.4.3",
+    "reflect-metadata": "^0.1.12",
+    "ts-node": "^7.0.1",
+    "tsconfig-paths": "^3.5.0",
+    "typeorm": "^0.2.7",
+    "typescript": "^3.0.1"
+  },
+  "scripts": {
+    "start": "nodemon"
+  },
+  "devDependencies": {
+    "@types/koa-router": "^7.0.31",
+    "koa-graphql": "^0.7.5",
+    "koa-mount": "^3.0.0"
+  }
+}
