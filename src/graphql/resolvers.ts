@@ -1,16 +1,16 @@
-import { updateCustomerMutation } from 'graphql/mutations/update-customer';
-import { toggleCardMutation } from "graphql/mutations/toggle-card";
-import { cardResolver } from "graphql/resolvers/card";
-import { cardsResolver } from "graphql/resolvers/cards";
-import { updateCardMutation } from "graphql/mutations/update-card";
-import { createCardMutation } from "graphql/mutations/create-card";
-import { customersResolver } from "graphql/resolvers/customers";
-import { carrierResolver } from "graphql/resolvers/carrier";
-import { createCustomerMutation } from 'graphql/mutations/create-customer';
-import { updateCarrierMutation } from 'graphql/mutations/update-carrier';
-import { createCarrierMutation } from 'graphql/mutations/create-carrier';
-import { carriersResolver } from 'graphql/resolvers/carriers';
-import { customerResolver } from 'graphql/resolvers/customer';
+import { updateCustomerMutation } from './mutations/update-customer';
+import { toggleCardMutation } from "./mutations/toggle-card";
+import { cardResolver } from "./resolvers/card";
+import { cardsResolver } from "./resolvers/cards";
+import { updateCardMutation } from "./mutations/update-card";
+import { createCardMutation } from "./mutations/create-card";
+import { customersResolver } from "./resolvers/customers";
+import { carrierResolver } from "./resolvers/carrier";
+import { createCustomerMutation } from './mutations/create-customer';
+import { updateCarrierMutation } from './mutations/update-carrier';
+import { createCarrierMutation } from './mutations/create-carrier';
+import { carriersResolver } from './resolvers/carriers';
+import { customerResolver } from './resolvers/customer';
 
 //
 // graphql/resolvers.ts
@@ -32,7 +32,7 @@ export const resolvers = {
 
         ...updateCustomerMutation,
         ...createCustomerMutation,
-        
+
         ...updateCarrierMutation,
         ...createCarrierMutation
     },

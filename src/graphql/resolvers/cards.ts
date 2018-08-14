@@ -9,6 +9,6 @@ import { Card }          from 'entities/card';
 export const cardsResolver = {
     async cards() {
         const repository = getRepository(Card);
-        return await repository.find();
+        return await repository.find({relations: ['customer']});
     }
 };

@@ -6,5 +6,5 @@ export const NewCustomerPatch = `
         name        : String!
         email       : String!
         address     : String!
-        todo        : CardPatch
+        todo        : NewCardPatch!
     }`;

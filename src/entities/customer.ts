@@ -8,7 +8,7 @@ import {
     OneToOne,
     JoinColumn,
 } from 'typeorm';
-import { Card } from 'entities/card';
+import { Card } from './card';
 
 
 @Entity('customers')
@@ -35,7 +35,9 @@ export class Customer extends BaseEntity {
     })
     address: string;
 
-    @OneToOne(type => Card, card => card.customer)
+    @OneToOne(type => Card, card => card.customer,{
+        cascade: true,
+    })
     @JoinColumn()
     todo: Card;
 
