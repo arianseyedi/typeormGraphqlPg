@@ -12,5 +12,22 @@ export const Mutation = `
         createCard (
             card: NewCardPatch!
         ): Card
-    }
-`;
+
+        updateCustomer (
+            id: String!
+            patch: CustomerPatch!
+        ): Customer
+
+        createCustomer (
+            customer: NewCustomerPatch!
+        ): Customer
+
+        updateCarrier (
+            id: String!
+            patch: CarrierPatch!
+        ): Carrier
+
+        createCarrier (
+            carrier: NewCarrierPatch!
+        ): Carrier
+    }`;
