@@ -8,12 +8,9 @@ import { Mutation }  from 'graphql/types/mutation';
 const schemaDefinition = `
     schema {
         query: Query
-        
-        # Add mutation here
         mutation : Mutation 
     }
 `;
-
 
 const typeDefs = [
     schemaDefinition,
@@ -21,7 +18,6 @@ const typeDefs = [
     Mutation,
     ...types,
 ];
-
 
 export const schemas = makeExecutableSchema({
     typeDefs,

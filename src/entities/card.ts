@@ -5,7 +5,9 @@ import {
     CreateDateColumn,
     UpdateDateColumn,
     BaseEntity,
+    OneToOne,
 } from 'typeorm';
+import { Customer } from 'entities/customer';
 
 
 @Entity('cards')
@@ -32,5 +34,8 @@ export class Card extends BaseEntity {
         default: "false",
     })
     done: boolean;
+
+    @OneToOne(type => Customer, customer => customer.todo)
+    customer: Customer;
 
 }

@@ -16,7 +16,7 @@ export const databaseInitializer = async () => {
         password : 'tester',
         database : 'test1',
         entities: [
-            Card,
+            "src/entities/**/*.ts",
         ],
         logging: ['query', 'error'],
         synchronize: true,

@@ -11,4 +11,4 @@ export const Card = `
         created_at  : String
         updated_at  : String
     }
-`;
+    `;
