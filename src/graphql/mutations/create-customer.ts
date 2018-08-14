@@ -25,8 +25,6 @@ export const createCustomerMutation = {
         todoEntity.done = todo.done;
         todoEntity.description = todo.description;
 
-        console.log(customerEntity);
-        console.log(todoEntity);
         customerEntity.todo = todoEntity;
         await repository.save(customerEntity);
         return customer;
