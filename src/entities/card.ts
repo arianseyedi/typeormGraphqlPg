@@ -7,7 +7,7 @@ import {
     BaseEntity,
     OneToOne,
 } from 'typeorm';
-import { Customer } from 'entities/customer';
+import { Customer } from './customer';
 
 
 @Entity('cards')

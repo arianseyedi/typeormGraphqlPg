@@ -1,10 +1,7 @@
-export const Customer = `
-    type Customer {
-        id          : String
+export const CustomerPatch = `
+    input CustomerPatch {
         name        : String
         email       : String
         address     : String
-        todo        : Card
-        created_at  : String
-        updated_at  : String    
+        todo        : CardPatch
     }`;

@@ -6,4 +6,5 @@ export const NewCardPatch = `
         title       : String!
         description : String
         done        : Boolean
+        customer    : NewCustomerPatch
     }`;

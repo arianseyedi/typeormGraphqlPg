@@ -1,3 +1,4 @@
+import { Card } from 'entities/card';
 import * as uuid from 'uuid/v4';
 import { Customer } from 'entities/customer';
 import { getRepository } from 'typeorm';
@@ -6,11 +7,28 @@ import { getRepository } from 'typeorm';
 export const createCustomerMutation = {
     async createCustomer(_, { customer: attrs }) {
         const repository = getRepository(Customer)
-        const customer = {
+        const customerEntity = new Customer();
+        const todoEntity = new Card();
+        todoEntity.id = uuid();
+        const { todo } = attrs;
+        // prepare customer   
+        let customer = {
             id: uuid(),
-            ...attrs,
+            ...attrs
         };
-        await repository.save(customer);
+        customerEntity.id = customer.id;
+        customerEntity.address = customer.address;
+        customerEntity.email = customer.email;
+        customerEntity.name = customer.name;
+        // prepare todo
+        todoEntity.title = todo.title;
+        todoEntity.done = todo.done;
+        todoEntity.description = todo.description;
+
+        console.log(customerEntity);
+        console.log(todoEntity);
+        customerEntity.todo = todoEntity;
+        await repository.save(customerEntity);
         return customer;
     }
 }

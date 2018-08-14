@@ -8,6 +8,7 @@ export const Card = `
         title       : String
         description : String
         done        : Boolean
+        customer    : Customer
         created_at  : String
         updated_at  : String
     }
