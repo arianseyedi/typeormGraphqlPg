@@ -6,4 +6,5 @@ export const NewCarrierPatch = `
         name        : String!
         email       : String!
         address     : String!
+        trucks      : [NewTruckPatch]!
     }`;
