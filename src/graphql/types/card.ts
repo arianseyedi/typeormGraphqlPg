@@ -1,7 +1,3 @@
-//
-// graphql/types/card.ts
-//
-
 export const Card = `
     type Card {
         id          : String
@@ -11,5 +7,4 @@ export const Card = `
         customer    : Customer
         created_at  : String
         updated_at  : String
-    }
-    `;
+    }`;

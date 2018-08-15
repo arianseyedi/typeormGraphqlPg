@@ -34,6 +34,6 @@ export const resolvers = {
         ...createCustomerMutation,
 
         ...updateCarrierMutation,
-        ...createCarrierMutation
+        ...createCarrierMutation,
     },
 };

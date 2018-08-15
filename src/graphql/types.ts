@@ -8,6 +8,9 @@ import { NewCustomerPatch } from './types/new-customer';
 import { NewCarrierPatch } from './types/new-carrier';
 import { Customer } from './types/customer';
 import { Carrier } from './types/carrier';
+import { NewTruckPatch } from 'graphql/types/new-truck-patch';
+import { TruckPatch } from 'graphql/types/truck-patch';
+import { Truck } from 'graphql/types/truck';
 
 
 export const types = [
@@ -19,5 +22,8 @@ export const types = [
     NewCustomerPatch,
     Carrier,
     CarrierPatch,
-    NewCarrierPatch
+    NewCarrierPatch,
+    Truck,
+    TruckPatch,
+    NewTruckPatch
 ];

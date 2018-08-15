@@ -31,3 +31,4 @@ export const Mutation = `
             carrier: NewCarrierPatch!
         ): Carrier
     }`;
+    // FIXME: truck...
