@@ -10,5 +10,7 @@ export const Query = `
         customers: [Customer]
         carrier(id: String!): Carrier
         carriers: [Carrier]
+        truck(id: String!): Truck
+        trucks: [Truck]
     }
 `;

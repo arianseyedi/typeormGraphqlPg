@@ -13,3 +13,5 @@ export const updateCarrierMutation = {
         }
     }
 }
+
+// FIXME: update Truck

@@ -4,3 +4,4 @@ export const CardPatch = `
         description : String
         done        : Boolean
     }`;
+

@@ -3,4 +3,5 @@ export const CarrierPatch = `
         name        : String
         email       : String
         address     : String
+        trucks      : [TruckPatch]
     }`;

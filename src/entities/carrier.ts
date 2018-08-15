@@ -7,7 +7,9 @@ import {
     BaseEntity,
     OneToOne,
     JoinColumn,
+    OneToMany,
 } from 'typeorm';
+import { Truck } from 'entities/truck';
 
 
 @Entity('carriers')
@@ -33,5 +35,10 @@ export class Carrier extends BaseEntity {
         default: "Toronto",
     })
     address: string;
+
+    @OneToMany(type => Truck, truck => truck.carrier, {
+        cascade: true
+    })
+    trucks: Truck[];
 
 }
