@@ -23,9 +23,11 @@ export const createCarrierMutation = {
             truckEntity.carrier = truck.description;
             trucksArr.push(truckEntity); // populate the array of trucks
         });
-        carrierEntity.trucks = trucksArr;
+        carrierEntity.trucks = trucksArr; // truck saved
         /**
-         * For example, we have a Post entity and it has a many-to-many relation to Category called categories. Let's add a new category to this many-to-many relation:
+         * For example, we have a Post entity and it has a
+         * many-to-many relation to Category called categories. 
+         * Let's add a new category to this many-to-many relation:
 
             import {getConnection} from "typeorm";
 
@@ -35,13 +37,7 @@ export const createCarrierMutation = {
                 .of(post)
                 .add(category);
          */
-        const repository = getRepository(Carrier)
-        await repository.save(carrierEntity);
-        const carrier = await getRepository(Carrier)
-            .findOne(
-                carrierEntity.id, 
-                { relations: ['customers']}
-            )
+        
         // prepare customer
         console.log(attrs)
         let customersArr = []; // array to store customers
@@ -57,11 +53,19 @@ export const createCarrierMutation = {
                     }
                 )
             if (maybe_customer) {
+                const repository = getRepository(Carrier)
+                await repository.save(carrierEntity);
+                const carrier = await getRepository(Carrier)
+                    .findOne(
+                        carrierEntity.id, 
+                        { relations: ['customers']}
+                    )
                 console.log(maybe_customer)
-                carrier.customers.push(maybe_customer)
+                carrier.customers.push(maybe_customer) // customer saved
+                await repository.save(carrier); // carrier saved
+                return carrierEntity;
             }
         });
-        await repository.save(carrier);
-        return carrierEntity;
+        return null;
     }
 }
