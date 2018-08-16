@@ -14,4 +14,4 @@ export const updateCarrierMutation = {
     }
 }
 
-// FIXME: update Truck
+// FIXME: update Trucks and add update customer
