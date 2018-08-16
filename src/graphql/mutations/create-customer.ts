@@ -27,6 +27,7 @@ export const createCustomerMutation = {
 
         customerEntity.todo = todoEntity;
         await repository.save(customerEntity);
-        return customer;
+        return customerEntity;
     }
 }
+// FIXME: add update carriers from this end too (like in create-carrier method)

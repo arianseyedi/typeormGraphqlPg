@@ -4,4 +4,5 @@ export const CustomerPatch = `
         email       : String
         address     : String
         todo        : CardPatch
+        carriers   : [CarrierPatch]
     }`;

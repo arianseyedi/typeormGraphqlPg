@@ -1,4 +1,4 @@
-import { Carrier } from './carrier';
+import { Carrier } from './carrier'
 import {
     Entity,
     PrimaryGeneratedColumn,

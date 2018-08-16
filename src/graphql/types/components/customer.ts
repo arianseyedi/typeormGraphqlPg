@@ -5,6 +5,7 @@ export const Customer = `
         email       : String
         address     : String
         todo        : Card
+        carriers    : [Carrier]
         created_at  : String
         updated_at  : String    
     }`;

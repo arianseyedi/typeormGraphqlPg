@@ -15,3 +15,4 @@ export const createCardMutation = {
         return card;
     }
 };
+// FIXME: delete this method

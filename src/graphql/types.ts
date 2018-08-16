@@ -1,16 +1,17 @@
-import { CarrierPatch } from './types/carrier-patch';
-import { CustomerPatch } from './types/customer-patch';
+import { CarrierPatch } from './types/components/carrier-patch';
+import { CustomerPatch } from './types/components/customer-patch';
 
-import { NewCardPatch } from './types/new-card-patch';
-import { CardPatch } from './types/card-patch';
-import { Card } from './types/card';
-import { NewCustomerPatch } from './types/new-customer';
-import { NewCarrierPatch } from './types/new-carrier';
-import { Customer } from './types/customer';
-import { Carrier } from './types/carrier';
-import { NewTruckPatch } from 'graphql/types/new-truck-patch';
-import { TruckPatch } from 'graphql/types/truck-patch';
-import { Truck } from 'graphql/types/truck';
+import { NewCardPatch } from './types/components/new-card-patch'
+import { CardPatch } from './types/components/card-patch'
+import { Card } from './types/components/card';
+import { NewCustomerPatch } from './types/components/new-customer';
+import { NewCarrierPatch } from './types/components/new-carrier';
+import { Customer } from './types/components/customer';
+import { Carrier } from './types/components/carrier';
+import { NewTruckPatch } from './types/components/new-truck-patch'
+import { TruckPatch } from './types/components/truck-patch'
+import { Truck } from './types/components/truck'
+import { CustomerHint } from './types/components/customer-hint';
 
 
 export const types = [
@@ -18,6 +19,7 @@ export const types = [
     CardPatch,
     NewCardPatch,
     Customer,
+    CustomerHint,
     CustomerPatch,
     NewCustomerPatch,
     Carrier,
