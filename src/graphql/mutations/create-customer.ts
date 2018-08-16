@@ -27,6 +27,7 @@ export const createCustomerMutation = {
 
         customerEntity.todo = todoEntity;
         await repository.save(customerEntity);
-        return customer;
+        return customerEntity;
     }
 }
+// FIXME: add update customers from this end too

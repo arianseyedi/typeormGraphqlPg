@@ -22,18 +22,6 @@ export const databaseInitializer = async () => {
         synchronize: true,
     }).then((connection) => {
         console.log('Database connection established');
-        
-        // // Create new instance
-        // const card = new Card();
-        // card.title = 'First card';
-        // card.done  = false;
-        
-        // // Persist to database
-        // return connection.manager
-        //     .save(card)
-        //     .then(card => {
-        //         console.log('card saved');
-        //     })
     });
-
+    console.log('Database connection ended');
 };

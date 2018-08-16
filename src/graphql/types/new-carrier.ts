@@ -7,4 +7,5 @@ export const NewCarrierPatch = `
         email       : String!
         address     : String!
         trucks      : [NewTruckPatch]!
+        customers   : [CustomerHint]
     }`;

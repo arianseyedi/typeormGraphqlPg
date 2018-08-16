@@ -1,3 +1,4 @@
+import { Carrier } from './carrier';
 import {
     Entity,
     PrimaryGeneratedColumn,
@@ -7,6 +8,8 @@ import {
     BaseEntity,
     OneToOne,
     JoinColumn,
+    ManyToMany,
+    JoinTable,
 } from 'typeorm';
 import { Card } from './card';
 
@@ -40,5 +43,8 @@ export class Customer extends BaseEntity {
     })
     @JoinColumn()
     todo: Card;
+
+    @ManyToMany(type => Carrier, carrier => carrier.customers)
+    carriers: Carrier[];
 
 }

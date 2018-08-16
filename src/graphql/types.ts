@@ -11,6 +11,7 @@ import { Carrier } from './types/carrier';
 import { NewTruckPatch } from 'graphql/types/new-truck-patch';
 import { TruckPatch } from 'graphql/types/truck-patch';
 import { Truck } from 'graphql/types/truck';
+import { CustomerHint } from 'graphql/types/customer-hint';
 
 
 export const types = [
@@ -18,6 +19,7 @@ export const types = [
     CardPatch,
     NewCardPatch,
     Customer,
+    CustomerHint,
     CustomerPatch,
     NewCustomerPatch,
     Carrier,

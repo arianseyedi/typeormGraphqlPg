@@ -8,8 +8,11 @@ import {
     OneToOne,
     JoinColumn,
     OneToMany,
+    ManyToMany,
+    JoinTable,
 } from 'typeorm';
 import { Truck } from 'entities/truck';
+import { Customer } from './customer';
 
 
 @Entity('carriers')
@@ -40,5 +43,9 @@ export class Carrier extends BaseEntity {
         cascade: true
     })
     trucks: Truck[];
+
+    @ManyToMany(type => Customer, customer => customer.carriers)
+    @JoinTable()
+    customers: Customer[];
 
 }
