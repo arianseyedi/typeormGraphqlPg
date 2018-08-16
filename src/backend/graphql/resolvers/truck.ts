@@ -1,4 +1,4 @@
-import { Truck } from 'entities/truck'
+import { Truck } from 'backend/entities/truck'
 import { getRepository } from 'typeorm';
 
 export const truckResolver = {

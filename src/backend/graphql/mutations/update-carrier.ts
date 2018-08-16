@@ -1,4 +1,4 @@
-import { Carrier } from 'entities/carrier';
+import { Carrier } from 'backend/entities/carrier';
 import { getRepository } from 'typeorm';
 
 

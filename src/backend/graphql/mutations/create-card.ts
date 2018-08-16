@@ -1,7 +1,7 @@
 import * as uuid from 'uuid/v4';
 
 import { getRepository } from 'typeorm';
-import { Card }          from 'entities/card';
+import { Card } from 'backend/entities/card';
 
 
 export const createCardMutation = {

@@ -1,6 +1,6 @@
-import { Card } from 'entities/card';
+import { Card } from 'backend/entities/card';
 import * as uuid from 'uuid/v4';
-import { Customer } from 'entities/customer';
+import { Customer } from 'backend/entities/customer';
 import { getRepository } from 'typeorm';
 
 

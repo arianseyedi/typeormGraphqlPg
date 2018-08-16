@@ -1,9 +1,7 @@
 //
 // initializers/database.ts
 //
-const path = require('path');
 import { createConnection } from 'typeorm';
-import { Card } from 'entities/card';
 
 
 export const databaseInitializer = async () => {

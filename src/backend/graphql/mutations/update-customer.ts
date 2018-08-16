@@ -1,5 +1,5 @@
 import { getRepository } from 'typeorm';
-import { Customer } from 'entities/customer';
+import { Customer } from 'backend/entities/customer';
 
 
 export const updateCustomerMutation = {

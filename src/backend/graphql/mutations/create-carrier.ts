@@ -1,8 +1,8 @@
-import { Truck } from 'entities/truck';
+import { Truck } from 'backend/entities/truck';
 import * as uuid from 'uuid/v4';
-import { Carrier } from 'entities/carrier';
+import { Carrier } from 'backend/entities/carrier';
 import { getRepository, getConnection, getManager } from 'typeorm';
-import { Customer } from 'entities/customer';
+import { Customer } from 'backend/entities/customer';
 
 // TODO: make use of the Querybuilder instead to make queries more efficient.
 export const createCarrierMutation = {

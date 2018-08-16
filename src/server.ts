@@ -1,7 +1,7 @@
 import * as Koa from 'koa';
 import * as Router from 'koa-router';
-import { schemas } from 'graphql/schema';
 import { databaseInitializer } from 'initializers/database';
+import { schemas } from 'backend/graphql/schema';
 // const Router = require('koa-router'); // koa-router@7.x
 
 const graphqlHTTP = require('koa-graphql');

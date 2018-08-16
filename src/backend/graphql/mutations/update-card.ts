@@ -1,5 +1,5 @@
 import { getRepository } from 'typeorm';
-import { Card }          from 'entities/card';
+import { Card }          from 'backend/entities/card';
 
 export const updateCardMutation = {
     async updateCard(_, { id, patch }) {

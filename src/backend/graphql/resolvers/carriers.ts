@@ -1,5 +1,5 @@
 import { getRepository } from 'typeorm';
-import { Carrier } from 'entities/carrier';
+import { Carrier } from 'backend/entities/carrier';
 
 export const carriersResolver = {
     async carriers() {
