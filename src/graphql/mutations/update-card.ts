@@ -12,4 +12,4 @@ export const updateCardMutation = {
         };
     }
 };
-// FIXME:
+// FIXME: delete this method

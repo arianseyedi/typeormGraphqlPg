@@ -11,8 +11,8 @@ import {
     ManyToMany,
     JoinTable,
 } from 'typeorm';
-import { Truck } from 'entities/truck';
-import { Customer } from './customer';
+import { Truck } from './truck'
+import { Customer } from './customer'
 
 
 @Entity('carriers')

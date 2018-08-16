@@ -4,7 +4,7 @@ import { Carrier } from 'entities/carrier';
 import { getRepository, getConnection, getManager } from 'typeorm';
 import { Customer } from 'entities/customer';
 
-// complete
+// TODO: make use of the Querybuilder instead to make queries more efficient.
 export const createCarrierMutation = {
     async createCarrier(_, { carrier: attrs }) {
         const carrierEntity = new Carrier();

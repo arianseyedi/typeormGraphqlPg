@@ -1,4 +1,4 @@
-import { Carrier } from './carrier';
+import { Carrier } from './carrier'
 import {
     Entity,
     PrimaryGeneratedColumn,
@@ -11,7 +11,7 @@ import {
     ManyToMany,
     JoinTable,
 } from 'typeorm';
-import { Card } from './card';
+import { Card } from './card'
 
 
 @Entity('customers')

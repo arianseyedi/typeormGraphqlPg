@@ -30,4 +30,4 @@ export const createCustomerMutation = {
         return customerEntity;
     }
 }
-// FIXME: add update customers from this end too
+// FIXME: add update carriers from this end too (like in create-carrier method)
